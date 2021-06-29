@@ -1,17 +1,32 @@
-/* Error: Undefined variable.
- *    ,
- * 19 |     background-color: $black-color;
- *    |                       ^^^^^^^^^^^^
- *    '
- *   src\style.scss 19:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 19 \2502      background-color: $black-color;\d\a    \2502                        ^^^^^^^^^^^^\a    \2575 \a   src\\style.scss 19:23  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  width: 100%;
+  background: #EAE9E4;
+  position: relative;
+}
+body .hamburger {
+  background: black;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+body .hamburger div {
+  width: 35px;
+  height: 5px;
+  background: white;
+}
+
+/*# sourceMappingURL=style.css.map */
